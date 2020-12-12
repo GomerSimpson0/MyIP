@@ -3,7 +3,7 @@ MyIP
 
 Hello! This is a simple script which can help you to find out your localhost ip, ip address in local network and your global ip address
 
-You need to install Python 3 and some packages, such as pymyip0 and bs4
+You need to install Python 3 and some packages
 
 Run command to install python packages in Windows:
 
