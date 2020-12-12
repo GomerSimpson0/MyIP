@@ -1,5 +1,5 @@
-import http.client
+import pymyip 
 
-conn = http.client.HTTPConnection("ifconfig.me")
-conn.request("GET", "/ip")
-print(conn.getresponse().read())
+print("Your ip " + pymyip.get_ip())
+print("Your city " + pymyip.get_city())
+print("Your country" + pymyip.get_country())
