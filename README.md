@@ -18,6 +18,9 @@ Run command to install python packages in Linux:
 
 After installing it should works
 
+For Linux users
+---------------
+
 If you work in Linux you can make alias, for example: alias myip='python3 /path/to/script/main.py' to run script in one command
 
 Pleasant use :)
