@@ -5,6 +5,9 @@ Hello! This is a simple script which can help you to find out your localhost ip,
 
 You need to install Python 3 and some packages
 
+Installation
+------------
+
 Run command to install python packages in Windows:
 
     pip install -r depends.txt
