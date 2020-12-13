@@ -1,5 +1,5 @@
-MyIP
-====
+MyIP 
+=====
 
 Hello! This is a simple script which can help you to find out your localhost ip, ip address in local network and your global ip address
 
