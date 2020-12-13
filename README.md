@@ -21,6 +21,6 @@ After installing it should works
 For Linux users
 ---------------
 
-If you work in Linux you can make alias, for example: alias myip='python3 /path/to/script/main.py' to run script in one command
+If you work in Linux you can make alias, for example: alias myip='python3 /path/to/script/main.py' to run script in one command using console
 
 Pleasant use :)
