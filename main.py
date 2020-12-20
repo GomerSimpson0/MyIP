@@ -6,32 +6,11 @@ import telnetlib
 
 localhostIP = socket.gethostbyname(socket.gethostname())
 print("localhost   -  " + localhostIP)
-print("open ports on localhost: ", end = '')
-HOST = localhostIP
-for port in range (1,65535):
-    try:
-        if(telnetlib.Telnet(HOST,port)):
-            print(port, end = '  ')
-    except ConnectionRefusedError as err:
-        print("", end = '')
-del HOST
-print("\n")
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(("8.8.8.8", 80))
 localIP = s.getsockname()[0]
 print("local ip    -  " + localIP)
-print("local open ports: ", end = '')
-s.close()
-HOST = localIP
-for port in range (1,65535):
-    try:
-        if(telnetlib.Telnet(HOST,port)):
-            print(port, end = '  ')
-    except ConnectionRefusedError as err:
-        print("", end = '')
-del HOST
-del s
 print("\n")
 
 externalIP = pymyip.get_ip()
