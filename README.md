@@ -16,11 +16,11 @@ Run command to install python packages in Linux:
 
     pip3 install -r depends.txt
 
-After installing it should works
+After installation it should works
 
 For Linux users
 ---------------
 
-If you work in Linux you can make alias, for example: alias myip='python3 /path/to/script/main.py' to run script in one command using console
+If you work in Linux you can make alias to run script in one command using console
 
 Pleasant use :)
