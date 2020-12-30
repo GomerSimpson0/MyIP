@@ -1,7 +1,7 @@
 MyIP 
 =====
 
-Hello! This is a simple script which can help you to find out your localhost ip, ip address in local network and your external ip address. Also it shows open ports on external ip.
+Hello! This is a simple script which can help you to find out your localhost ip, ip address in local network and your external ip address.
 
 You need to install Python 3 and some packages
 
