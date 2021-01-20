@@ -24,7 +24,7 @@ jobs:
 
    steps:
    - name: Clone Repository
-     uses: action/checkout@v1
+     uses: actions/checkout@v1
  
    - name: Print Hello Message
      run: echo "Hello World from Testing"
