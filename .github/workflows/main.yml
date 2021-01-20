@@ -22,22 +22,22 @@ jobs:
   testing:
    runs-on: ubuntu-latest
 
-    steps:
-    - name: Clone Repository
-      uses: action/checkout@v1
+   steps:
+   - name: Clone Repository
+     uses: action/checkout@v1
  
-    - name: Print Hello Message
-      run: echo "Hello World from Testing"
+   - name: Print Hello Message
+     run: echo "Hello World from Testing"
 
-    - name: Execute few commands
-      run: |
-        echo "Hello 1"      
-        echo "Hello 2"
-        echo "Application name is ${{env.Application-Name}}"
+   - name: Execute few commands
+     run: |
+       echo "Hello 1"      
+       echo "Hello 2"
+       echo "Application name is ${{env.Application-Name}}"
 
 
-    - name: List Current Folder
-      run: ls -la
+   - name: List Current Folder
+     run: ls -la
 
   depoyment:
     runs-on: ubuntu-latest
