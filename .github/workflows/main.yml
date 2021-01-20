@@ -1,6 +1,9 @@
 # This is a basic workflow to help you get started with Actions
 
 name: MyIP
+env:
+  Application-Name : "Introduction to Github Actions"
+  Version          : "Version of last Commit is ${{github.sha}}"
 
 # Controls when the action will run. 
 on:
@@ -23,7 +26,12 @@ jobs:
     steps:
     - name: Print Hello Message
       run: echo "Hello World from Testing"
-      
+    - name: Execute few commands
+      run: |
+        echo "Hello 1"      
+        echo "Hello 2"
+        echo "Application name is ${{env.Application-Name}}"
+
   depoyment:
     runs-on: ubuntu-latest
     needs: [testing]
@@ -31,3 +39,5 @@ jobs:
     steps:
     - name: Print Hello World
       run: echo "Hello world from Deployment"
+    - name: Printing Hash of Commit
+      run: echo "Sha sum of commit is ${{env.Version}}"
