@@ -31,6 +31,8 @@ jobs:
         echo "Hello 1"      
         echo "Hello 2"
         echo "Application name is ${{env.Application-Name}}"
+    - name: List Current Folder
+      run: ls -la
 
   depoyment:
     runs-on: ubuntu-latest
